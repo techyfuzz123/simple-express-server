@@ -15,12 +15,12 @@ jobs:
     steps:
     - name: Checkout the code
       uses: actions/checkout@v2
-    -name: Publish to Docker Hub
+    - name: Push to Docker Hub
       uses: docker/build-push-action@v1
       with:
-        username: ${{secrets.DOCK_USERNAME}}
-        password: ${{secrets.DOCK_PASSWD}}
-        repository: techyfuzz123/simple-express-server
-        tags: latest, ${{github.run_number}}
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
+        repository: msusdev/webnext
+        tags: latest, ${{ github.run_number }}
       
       
