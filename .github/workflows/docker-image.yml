@@ -1,0 +1,26 @@
+name: Dockerize test
+
+on:
+  push:
+    branches: [ "main" ]
+    
+  workflow_dispatch:
+
+jobs:
+
+  build-container:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout the code
+      uses: actions/checkout@v2
+    - name: Push to Docker Hub
+      uses: docker/build-push-action@v1
+      with:
+        username: ${{ secrets.DOCK_USERNAME }}
+        password: ${{ secrets.DOCK_PASSWD }}
+        repository: techyfuzz123/simple-express-server
+        tags: latest, ${{ github.run_number }}
+      
+      
