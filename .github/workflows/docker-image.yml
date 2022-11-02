@@ -18,9 +18,9 @@ jobs:
     - name: Push to Docker Hub
       uses: docker/build-push-action@v1
       with:
-        username: ${{ secrets.DOCKER_USERNAME }}
-        password: ${{ secrets.DOCKER_PASSWORD }}
-        repository: msusdev/webnext
+        username: ${{ secrets.DOCK_USERNAME }}
+        password: ${{ secrets.DOCK_PASSWD }}
+        repository: techyfuzz123/simple-express-server
         tags: latest, ${{ github.run_number }}
       
       
