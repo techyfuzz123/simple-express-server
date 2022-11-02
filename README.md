@@ -19,3 +19,4 @@ To install and run simply follow these steps:
 
 5)  Build your test data right in the server.js file. Create new endpoints as needed
 To test skip github actions
+second test
