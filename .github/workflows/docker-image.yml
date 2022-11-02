@@ -13,11 +13,10 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: | 
-      echo "${secrets.DOCK_PASSWD}" | docker login -u "techyfuzz123" --pasword-stdin
-      docker build . --file Dockerfile --tag my-image-name:$(date +%s)
-      docker push techyfuzz123/simple-express-server:$(date +%s)
-      docker build . --file Dockerfile --tag my-image-name:latest
-      docker push techyfuzz123/simple-express-server:latest
+      run: echo "${{secrets.DOCK_PASSWD}}" | docker login -u "techyfuzz123" --pasword-stdin
+           docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+           docker push techyfuzz123/simple-express-server:$(date +%s)
+           docker build . --file Dockerfile --tag my-image-name:latest
+           docker push techyfuzz123/simple-express-server:latest
       
       
