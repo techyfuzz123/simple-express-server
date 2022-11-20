@@ -1,5 +1,5 @@
-adfasdvar express = require('express');
-asdfasfdvar bodyParser = require('body-parser');
+express = require('express');
+bodyParser = require('body-parser');
 var app = express();
 
 //Allow all requests from all domains & localhost
