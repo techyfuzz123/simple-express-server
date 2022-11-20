@@ -18,3 +18,5 @@ To install and run simply follow these steps:
 4)  You can run a quick test by entering this in your browser: `http://localhost:6060/animals`
 
 5)  Build your test data right in the server.js file. Create new endpoints as needed
+To test skip github actions
+second test
