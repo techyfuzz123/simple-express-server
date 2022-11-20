@@ -16,10 +16,10 @@ app.use(bodyParser.urlencoded({extended: false}));
 var ingredients = [
     {
         "id": "234kjw",
-        "text": "Eggs"
+        "text": "Easdfafdggs"
     },
     {
-        "id": "as82w",
+        "id": "aasdfafds82w",
         "text": "Milk"
     },
     {
@@ -65,7 +65,7 @@ var ingredients = [
 ];
 
 app.get('/ingredients', function(req, res) {
-    console.log("GET From SERVER");
+    console.log(req);
     res.send(ingredients);
 });
 
