@@ -16,7 +16,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 var ingredients = [
     {
         "id": "2asdfasfd3asdfsdfasdfasdf4kjw",
-        "textadfasfd": "Eaaaadsfadsdfasfdsdfafdggs"
+        "textadfasfd": "Eaaaadsfadfaadsdfasfdsdfafdggs"
     },
     {
         "id": "aasdfafds82w",
