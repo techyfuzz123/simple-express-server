@@ -24,7 +24,6 @@ jobs:
     - name: Build and Push
       uses: docker/build-push-action@v3
       with:
-        context: .
 	cache-from: type=gha
 	cache-to: type=gha,mode=max
         tags: techyfuzz123/simple-express-server:latest, techyfuzz123/simple-express-server:${{ github.run_number }}
